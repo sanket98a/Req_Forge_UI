@@ -1,4 +1,3 @@
-"use client"
 
 import { useState } from "react"
 import { Button } from "@/components/ui/button"
@@ -28,10 +27,7 @@ const [openDialog, setDialogOpen] = useState(true) // true to show initially
   const languages = [
     { id: "english", name: "English" },
     { id: "spanish", name: "Spanish" },
-    { id: "french", name: "French" },
-    { id: "german", name: "German" },
-    { id: "chinese", name: "Chinese" },
-    { id: "japanese", name: "Japanese" },
+    { id: "french", name: "French" }
   ]
 
   /**
@@ -47,15 +43,11 @@ const [openDialog, setDialogOpen] = useState(true) // true to show initially
     <div className="w-[100vw]">
     <Dialog open={openDialog} onOpenChange={setDialogOpen}>
       <DialogContent className="bg-gray-50 sm:max-w-md">
-        <DialogHeader>
-          <DialogTitle>Language Options</DialogTitle>
-          <DialogDescription>Select your preferred language</DialogDescription>
-        </DialogHeader>
 
-        <div className="py-4">
+        <div className="p-1">
           <h3 className="text-sm font-medium mb-4">Select Language</h3>
 
-          <div className="grid grid-cols-2 gap-2 mb-6">
+          <div className="grid grid-cols-2 gap-2 ">
             {languages.map((language) => (
               <Button
                 key={language.id}

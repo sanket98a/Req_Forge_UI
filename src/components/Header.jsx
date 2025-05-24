@@ -7,7 +7,7 @@
  */
 export default function Header() {
   return (
-    <header className="border-b bg-white py-2">
+    <header className=" py-2">
       <h1 className="text-center text-lg font-medium text-gray-700">Requirement Forge</h1>
     </header>
   )

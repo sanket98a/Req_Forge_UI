@@ -111,8 +111,8 @@ export default function RequirementDetails() {
   }
 
   return (
-    <Card className="overflow-hidden">
-      <div className="p-4  flex justify-between items-center">
+    <Card className="overflow-hidden border-none shadow-none bg-transparent p-0">
+      <div className="flex p-2 md:p-4 border rounded-md bg-white justify-between items-center">
         <div className="flex-1">
           <p className="">{currentDetail.title}</p>
         </div>
@@ -129,14 +129,14 @@ export default function RequirementDetails() {
         </div>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 p-4">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         {/* Left side - Chat Interface */}
-        <div className="h-[350px]">
+        <div className="max-h-[350px] overflow-y-scroll hide-scrollbar">
           <ChatInterface />
         </div>
 
         {/* Right side - System Requirements */}
-        <div className="border rounded-md p-3 bg-white" style={{ height: "350px", overflowY: "auto" }}>
+        <div className="border rounded-md max-h-[350px] overflow-y-scroll hide-scrollbar p-3 bg-white" >
           <div className="space-y-3">
             <div>
               <p className="text-sm font-medium">

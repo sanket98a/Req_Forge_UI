@@ -51,7 +51,7 @@ export default function ProjectSettings() {
 
   return (
     <Card className="p-4 ">
-      <div className="space-y-4 h-66">
+      <div className="space-y-4">
         <div>
           <label className="text-sm font-medium block mb-1">Project/Platform Name:</label>
           <Select value={projectName} onValueChange={setProjectName}>

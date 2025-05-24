@@ -26,15 +26,12 @@ export default function ModePage() {
     <div className="w-[100vw]">
     <Dialog open={openDialog} onOpenChange={setDialogOpen} >
       <DialogContent className="bg-gray-50 sm:max-w-lg">
-        <DialogHeader>
-          {/* <DialogTitle>Mode Options</DialogTitle> */}
-          <DialogDescription>Select the mode you want to use</DialogDescription>
-        </DialogHeader>
+   
 
         <div className="py-4">
           <h3 className="text-sm font-medium mb-4">Mode Options</h3>
 
-          <div className="flex space-x-2 mb-6">
+          <div className="flex space-x-2">
             <Button
               variant={selectedMode === "assistant" ? "secondary" : "outline"}
               onClick={() => setSelectedMode("assistant")}

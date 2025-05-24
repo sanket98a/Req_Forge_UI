@@ -132,7 +132,7 @@ export default function StakeholderRequirementsTable() {
 
   return (
     <div className="space-y-1">
-      <Card className="overflow-hidden h-full">
+      <Card className="overflow-hidden h-full gap-0 py-1">
         <div className="p-2 border-b bg-gray-50 flex justify-between items-center">
           <h2 className="text-sm font-medium">Stakeholder Requirements</h2>
           <span className="text-xs text-gray-500">
@@ -140,8 +140,8 @@ export default function StakeholderRequirementsTable() {
           </span>
         </div>
 
-        <div className=" overflow-y-auto">
-          <Table>
+        <div className="max-h-48 overflow-y-auto hide-scrollbar">
+          <Table className={' overflow-y-auto'}>
             <TableHeader>
               <TableRow>
                 <TableHead className="w-[60px]">
